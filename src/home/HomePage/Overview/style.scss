@@ -1,0 +1,123 @@
+.joystack-overview-item {
+  color: #062644;
+}
+
+.joystack-overview-header > h2 {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.joystack-overview-item > h3 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.joystack-overview-item > p {
+  font-size: 19px;
+  max-width: 400px;
+  transition: height .3s;
+  display: block;
+  height: 0;
+}
+
+.joystack-overview-item:hover > p {
+  height: auto;
+}
+
+.item-icon-border {
+  display: inline-block;
+}
+
+.joystack-overview-item-container {
+  list-style: none;
+}
+
+.item-icon-border {
+  border-radius: 50%;
+  border: 2px dashed #f77548;
+  margin: 0;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.item-icon {
+  border-radius: 50%;
+  background-color: #fcefe7;
+  margin: auto;
+  display: flex;
+  align-items : center;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+
+.item-icon i {
+  font-size: 16px;
+  padding: 0;
+  margin: auto;
+  vertical-align: middle;
+  color: #f77548;
+  z-index: 2;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card-header-icon {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+
+.card-header, .card {
+  background: none !important;
+  border: none !important;
+  padding: 0;
+  width: 400px;
+}
+
+.card {
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+
+.card-body {
+  max-width: 490px;
+  font-size: 17px;
+  padding: 0;
+}
+
+.collapse-button {
+  text-decoration: none !important;
+  padding: 0;
+  display: inline-block;
+}
+
+.collapse-button > h2 {
+  font-size: 22px;
+  transition: font-size .3s;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  color: #062644 !important;
+  text-underline: none;
+}
+
+.overview-spacer {
+  width: 400px;
+  height: 4px;
+  background-color: #ff6431;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.overview-title {
+  font-weight: 600;
+  margin-left: 18px;
+}

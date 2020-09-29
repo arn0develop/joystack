@@ -1,0 +1,64 @@
+.back-button-container{
+
+  .back-button {
+    color: #c4ccd8;
+    background-color: inherit;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    margin-left: 2px;
+    transition: color .3s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover{
+      color: #f7744a;
+    }
+
+    .anticon {
+      vertical-align: 1px;
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .back-button {
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .back-button {
+      position: initial;
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 560px){
+    margin-top: 20px;
+  }
+
+}
+
+.back-button-container.summary-page{
+  margin-left: -350px;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 850px){
+  .back-button-container.summary-page{
+    margin:20px;
+  }
+}
+

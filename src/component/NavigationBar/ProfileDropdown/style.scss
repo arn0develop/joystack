@@ -1,0 +1,17 @@
+@import '../../../config';
+
+.header-dropdown.ant-dropdown {
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 3px;
+  box-shadow: -1px 1px 9px 4px rgba(185, 192, 197, 0.6);
+  overflow: hidden;
+  position: fixed;
+  .ant-dropdown-menu-item {
+    padding: 10px 16px;
+    .anticon {
+      vertical-align: 0;
+      font-size: 16px;
+    }
+  }
+}

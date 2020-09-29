@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,600&display=swap");
+
+.joystack-page {
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #fff;
+  color: #062644;
+  overflow: auto;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}

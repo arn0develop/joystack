@@ -1,0 +1,36 @@
+@import '../../../../../config';
+
+.select-container {
+  display: grid;
+  grid-template-columns: 40% 45% 1fr;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 500;
+  color: $primaryTextColor;
+  .info {
+    padding: 1px 10px;
+    background-color: #fbf1e9;
+    border-radius: 50%;
+    font-size: 16px;
+    color: $highlightColor;
+    cursor: pointer;
+    justify-self: end;
+  }
+  .ant-select {
+    .ant-select-selector {
+      border-radius: 15px;
+      height: 40px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.settings-menu-select.ant-select-dropdown {
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 3px;
+  box-shadow: -1px 1px 9px 4px rgba(185, 192, 197, 0.6);
+  .ant-select-item {
+    padding: 10px 16px;
+  }
+}

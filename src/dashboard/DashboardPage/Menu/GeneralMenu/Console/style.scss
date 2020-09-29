@@ -1,0 +1,141 @@
+@import '../../../../../config';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.console {
+  background-color: #1f1f1f;
+  position: relative;
+  box-shadow: -1px 1px 10px 5px rgba(185, 192, 197, 0.5);
+  min-height: 240px;
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+  }
+  .ant-list-empty-text {
+    visibility: hidden;
+    opacity: 0;
+  }
+ .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #292929;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .anticon {
+      color: #ffffff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  .ant-list {
+    max-height: 200px;
+    border-bottom: none;
+    overflow: auto;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    li {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 4px 15px;
+      font-weight: 500;
+      background-color: #1f1f1f;
+      color: white;
+      .admin-name {
+        color: #ffffff;
+      }
+      .anticon {
+        vertical-align: 1px;
+        margin-right: 15px;
+        color: #ffffff;
+      }
+    }
+  }
+  .console-command-input-container {
+    background-color: #1f1f1f;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    user-select: none;
+    span {
+      color: white;
+      padding: 10px 10px 10px 15px;
+    }
+    transition: background-color .5s;
+    :focus-within {
+      background-color: red;
+    }
+    .console-command-input {
+      padding: 10px 0 10px 15px;
+      border: none;
+      background-color: #1f1f1f;
+      color: white;
+      outline: none;
+      font-family: 'Roboto Mono', monospace;
+      transition: background-color .5s;
+      width: 90%;
+      ::placeholder {
+        color: #ffffff;
+      }
+      :focus {
+        border: none;
+        outline: none;
+        background-color: red;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .title {
+      padding: 12px;
+    }
+  }
+}
+
+.console-entry-time {
+  margin-left: 10px;
+}
+
+.console-entry-message {
+  position: absolute;
+  left: 150px;
+}
+
+.console-fullscreen {
+  background: #ffffff;
+  animation: .3s visible;
+  .console {
+    height: 100%;
+    .ant-list {
+      padding: 24px 8px;
+      max-height: calc(100vh - 91px);
+    }
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../../config';
+
+.world-selection-content {
+  width: 90%;
+  margin: auto;
+  padding: 0 24px;
+  hr {
+    border-top: 1px solid $secondaryLightGray;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
+}

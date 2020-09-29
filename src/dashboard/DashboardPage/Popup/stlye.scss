@@ -1,0 +1,74 @@
+@import '../../../config';
+
+.delete-popup {
+  width: 300px !important;
+}
+
+.map-popup {
+  width: 50% !important;
+  padding: 20px;
+  overflow: hidden;
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+  .ant-modal-header {
+    border-radius: 10px;
+    .ant-modal-title {
+      font-size: 22px;
+    }
+  }
+
+  .info-container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    column-gap: 60px;
+    row-gap: 30px;
+
+    .description {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      margin: 20px 0;
+    }
+
+    > img {
+      width: 100%;
+      padding-left: 50%;
+    }
+
+    .map-info {
+      h1 {
+        margin: 0;
+      }
+
+      p {
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        span:nth-child(1) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.popup-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  button {
+    @include mainButton(10px 40px, 50px);
+    display: flex;
+    align-items: center;
+    .anticon-download {
+      margin-right: 10px;
+    }
+  }
+
+  button.light-gray {
+    @include mainButton(10px 40px, 50px, $secondaryLightGray);
+  }
+}

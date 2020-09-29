@@ -1,0 +1,163 @@
+@import '../../config';
+
+.centered-button {
+  margin: auto;
+  align-items: center;
+}
+
+.setup-up-container-dashboard {
+  .steps-content {
+    height: 100px !important;
+    background: none !important;
+  }
+
+  @media screen and (max-width: 1024px){
+    margin-left: 0;
+  }
+
+}
+
+.setup-up-container {
+  font-family: $textFont;
+  background-color: #e8ecef;
+  .steps-content {
+    background-color: $primaryWhite;
+    height: 170px;
+    margin-bottom: 20px;
+    .logo {
+      padding: 24px 0;
+      text-align: center;
+    }
+    .ant-steps {
+      width: max-content;
+      margin: auto;
+      .ant-steps-item-container {
+        text-align: center;
+        .ant-steps-item-tail {
+          width: 105%;
+          &::after {
+            height: 3px;
+            position: absolute;
+            top: 6px;
+            left: 46%;
+          }
+        }
+        .ant-steps-item-tail,
+        .ant-steps-item-icon,
+        .ant-steps-item-content {
+          margin: 0;
+        }
+      }
+      .ant-steps-item-finish,
+      .ant-steps-item-process {
+        .ant-steps-item-container {
+          .ant-steps-item-title {
+            color: $highlightColor;
+            font-weight: 500;
+          }
+        }
+      }
+      .ant-steps-item-wait {
+        .ant-steps-item-container {
+          .ant-steps-item-title {
+            color: $secondaryLightGray;
+            font-weight: 500;
+          }
+        }
+      }
+      .ant-steps-item-finish {
+        .ant-steps-item-tail::after {
+          background-color: $highlightColor;
+        }
+      }
+      .half {
+        .ant-steps-item-container {
+          .ant-steps-item-tail::after {
+            background: linear-gradient(90deg, $highlightColor 50%, #f0f0f0 50%);
+          }
+        }
+      }
+      .ant-steps-item-wait,
+      .ant-steps-item-finish,
+      .ant-steps-item-process {
+        cursor: pointer;
+        .ant-steps-item-icon {
+          background-color: $highlightColor;
+          width: 20px;
+          height: 20px;
+        }
+        &.inActive {
+          cursor: not-allowed;
+        }
+      }
+      .ant-steps-item-wait {
+        .ant-steps-item-icon {
+          background-color: $secondaryLightGray;
+        }
+      }
+      .ant-steps-item-icon > .ant-steps-icon {
+        .ant-steps-icon-dot {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 560px) {
+        .ant-steps-item {
+          .ant-steps-item-container {
+            width: 80px;
+            .ant-steps-item-tail {
+              &::after {
+                left: 45%;
+              }
+            }
+            .ant-steps-item-content {
+              width: auto;
+            }
+          }
+          .ant-steps-item-title {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.setup-step-container {
+  min-height: calc(100vh - 188px - 81px);
+  margin: auto;
+}
+
+.setup-step-enter {
+  opacity: 0;
+  transform: translateX(0.9);
+}
+
+.setup-step-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 1000ms;
+}
+
+.setup-step-exit {
+  opacity: 1;
+}
+
+.setup-step-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 1000ms;
+}
+
+.step-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 50px auto 20px;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 560px){
+    flex-direction: column-reverse;
+  }
+
+}

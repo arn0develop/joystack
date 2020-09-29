@@ -1,0 +1,190 @@
+@import "../../config.scss";
+
+.badge {
+  position: relative;
+  display: block;
+  background: #161a2d;
+  border-radius: 0.5rem;
+  left: 0;
+  bottom: 1.5625rem;
+  padding: 1.25rem 8.5rem 0.3rem 9rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "Minecraft Regular", sans-serif, monospace;
+  font-weight: 100;
+  color: white;
+}
+
+.badge-shadow {
+  -webkit-box-shadow: -1px 1px 9px 4px rgba(185, 192, 197, 0.6);
+  -moz-box-shadow: -1px 1px 9px 4px rgba(185, 192, 197, 0.6);
+  box-shadow: -1px 1px 9px 4px rgba(185, 192, 197, 0.6);
+}
+
+.badge-small {
+  bottom: 1.5625rem !important;
+  padding: 1.25rem 8.5rem 0.3rem 7rem !important;
+  font-size: .75rem !important;
+  line-height: .5rem !important;
+}
+
+.badge > * {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.badge-volume {
+  position: absolute;
+  right: 2rem;
+  top: 1.25rem;
+  font-size: 1rem;
+}
+
+.badge-volume-offline {
+  color: #d53434;
+}
+
+.badge-description-text-name-copy {
+  cursor: pointer;
+}
+
+.badge-favicon-image {
+  position: absolute;
+  display: inline-block;
+  left: 1rem;
+  top: 50%;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  width: 5.625rem;
+  height: 5.625rem;
+  text-align: center;
+  line-height: 2.1875rem;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.badge-favicon-image-small {
+  left: 0.8rem !important;
+  top: 50% !important;
+  border-radius: 7px !important;
+  width: 4.400rem !important;
+  height: 4.400rem !important;
+  line-height: 2.1875rem !important;
+}
+
+.badge-volume-small {
+  position: absolute !important;
+  right: 2rem !important;
+  top: 1.25rem !important;
+  font-size: .6rem !important;
+}
+
+.badge-favicon {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .badge {
+    bottom: 1.5625rem !important;
+    padding: 1.25rem 8.5rem 0.3rem 7rem !important;
+    font-size: .75rem !important;
+    line-height: .5rem !important;
+  }
+
+  .badge-volume {
+    position: absolute !important;
+    right: 2rem !important;
+    top: 1.25rem !important;
+    font-size: .6rem !important;
+  }
+
+  .badge-favicon-image {
+    left: 0.8rem !important;
+    top: 50% !important;
+    border-radius: 7px !important;
+    width: 4.400rem !important;
+    height: 4.400rem !important;
+    line-height: 2.1875rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .badge {
+    bottom: 1.5625rem !important;
+    padding: 1.25rem 4.5rem 0.3rem 6rem !important;
+    font-size: .6rem !important;
+    line-height: .15rem !important;
+  }
+
+  .badge-volume {
+    position: absolute !important;
+    right: 2rem !important;
+    top: 1.25rem !important;
+    font-size: .6rem !important;
+  }
+
+  .badge-favicon-image {
+    left: 0.7rem !important;
+    top: 50% !important;
+    border-radius: 5px !important;
+    width: 3.700rem !important;
+    height: 3.700rem !important;
+    line-height: 2.1875rem !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .badge {
+    bottom: 1.5625rem !important;
+    padding: 1.25rem 2rem 0.2rem 5.5rem !important;
+    font-size: .6rem !important;
+    line-height: .13rem !important;
+  }
+
+  .badge-volume {
+    position: absolute !important;
+    right: 2rem !important;
+    top: 1.25rem !important;
+    font-size: .6rem !important;
+  }
+
+  .badge-favicon-image {
+    left: 0.7rem !important;
+    top: 50% !important;
+    border-radius: 5px !important;
+    width: 3.400rem !important;
+    height: 3.400rem !important;
+    line-height: 2.1875rem !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .badge {
+    bottom: 1.5625rem !important;
+    padding: 1.25rem 2rem 0.2rem 5.3rem !important;
+    font-size: .56rem !important;
+    line-height: .11rem !important;
+  }
+
+  .badge-volume {
+    position: absolute !important;
+    right: 2rem !important;
+    top: 1.25rem !important;
+    font-size: .6rem !important;
+  }
+
+  .badge-favicon-image {
+    left: 0.7rem !important;
+    top: 50% !important;
+    border-radius: 5px !important;
+    width: 3.200rem !important;
+    height: 3.200rem !important;
+    line-height: 2.1875rem !important;
+  }
+}

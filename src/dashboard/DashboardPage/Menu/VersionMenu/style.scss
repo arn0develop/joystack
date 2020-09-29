@@ -1,0 +1,57 @@
+@import '../../../../config';
+
+%title {
+  font-size: 16px;
+  font-weight: bold;
+  color: $primaryTextColor;
+  @media only screen and (max-width: 1150px) {
+    margin-left: 0;
+  }
+}
+
+%baseContent {
+  background-color: $primaryWhite;
+  margin-top: 20px;
+  padding: 16px 24px;
+  border-radius: 5px;
+}
+.version-menu-content {
+  width: 90%;
+  margin: 0 auto;
+  color: $primaryTextColor;
+  .upload-server-content {
+    border-radius: 10px;
+    height: 130px;
+    @extend %baseContent;
+    .title {
+      @extend %title;
+    }
+    .ant-select {
+      width: 210px;
+      margin: 10px 20px 0 0;
+      border-radius: 5px;
+    }
+    .ant-btn {
+      @include mainButton(auto, 5px);
+      .anticon {
+        vertical-align: 0;
+        font-size: 16px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .upload-server-content {
+      padding: 12px;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    padding: 0;
+    width: 100%;
+    .selected-gallery-content,
+    .upload-server-content {
+      .ant-select {
+        margin-right: 10px;
+      }
+    }
+  }
+}

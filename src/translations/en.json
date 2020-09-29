@@ -1,0 +1,429 @@
+{
+  "admin": {
+    "sidebar": {
+      "links": {
+        "resources": "Resources",
+        "domains": "Domains",
+        "types": "Server Types",
+        "icons": "Server Icons",
+        "accounts": "Accounts",
+        "realms": "Realms",
+        "statistics": "Statistics"
+      }
+    },
+    "header": {
+      "settings": "Settings",
+      "upgradeToPro": "Upgrade to Pro",
+      "logout": "Logout",
+      "forum": "Forum"
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "links": {
+        "general": "Server Start",
+        "settings": "Settings",
+        "version": "Version",
+        "worlds": "Worlds",
+        "plugins": "Plugins",
+        "players": "Players",
+        "statistics": "Statistics",
+        "data": "Data"
+      },
+      "sort": {
+        "name": "Name",
+        "lastChange": "Date of change",
+        "imported": "Imported",
+        "activeUsers": "Active users"
+      }
+    },
+    "header": {
+      "settings": "Settings",
+      "upgradeToPro": "Upgrade to Pro",
+      "logout": "Logout",
+      "forum": "Forum"
+    },
+    "menus": {
+      "general": {
+        "console": {
+          "title": "Console"
+        },
+        "link": {
+          "title": "Share your project"
+        },
+        "status": {
+          "title": "Start your server: [IP address]",
+          "description": "While your server is starting go ahead for further configuration or start immediately with Pro.",
+          "start": "Start",
+          "stop": "Stop",
+          "cancel": "Cancel",
+          "loading": "Loading",
+          "proStart": "Pro Start"
+        }
+      },
+      "settings": {
+        "switch": {
+          "on": "Yes",
+          "off": "No"
+        },
+        "gameMode": {
+          "title": "Game Mode",
+          "survival": "Survival",
+          "creative": "Creative",
+          "adventure": "Adventure",
+          "spectator": "Spectator"
+        },
+        "weather": {
+          "title": "Weather",
+          "clear": "Clear",
+          "simulated": "Simulated",
+          "thunder": "Thunder",
+          "rain": "Rain"
+        },
+        "difficulty": {
+          "title": "Difficulty",
+          "peaceful": "Peaceful",
+          "easy": "Easy",
+          "medium": "Medium",
+          "hard": "Hard",
+          "hardcore": "Hardcore"
+        },
+        "colors": {
+          "title": "Color",
+          "white": "White",
+          "black": "Black",
+          "darkBlue": "Dark Blue",
+          "darkGreen": "Dark Green",
+          "darkAqua": "Dark Aqua",
+          "darkRed": "Dark Red",
+          "darkPurple": "Dark Purple",
+          "gold": "Gold",
+          "gray": "Gray",
+          "darkGray": "Dark Gray",
+          "blue": "Blue",
+          "green": "Green",
+          "aqua": "Aqua",
+          "red": "Red",
+          "lightPurple": "Light Purple",
+          "yellow": "Yellow"
+        },
+        "daytime": {
+          "title": "Daytime",
+          "day": "Day",
+          "night": "Night"
+        },
+        "fields": {
+          "commandBlocks": "Command blocks",
+          "joinOrLeaveMessages": "Join/Leave messages",
+          "deathMessages": "Death messages",
+          "blockDamage": "Block damage",
+          "pvp": "Pvp",
+          "allowNether": "Allow nether",
+          "allowEnd": "Allow end",
+          "spawnProtection": "Spawn protection",
+          "resourcePackage": "Resource package",
+          "weather": "Weather",
+          "buildHeightLimit": "Max. Build height",
+          "chatColor": "Chat color",
+          "userColor": "User color",
+          "adminColor": "Admin color",
+          "visibility": "Visibility",
+          "attitudes": "World attitudes",
+          "keepInventory": "Keep inventory",
+          "enableMonsters": "Monster",
+          "enableVillagers": "Villager",
+          "enableAnimals": "Animal",
+          "gameMode": "Game Mode",
+          "difficulty": "Difficulty",
+          "showAchievements": "Show achievements",
+          "resourcePack": "Resource Pack"
+        },
+        "descriptions": {
+          "commandBlocks": "Command blocks",
+          "joinOrLeaveMessages": "Join/Leave messages",
+          "deathMessages": "Death messages",
+          "blockDamage": "Block damage",
+          "pvp": "Pvp",
+          "allowNether": "Allow nether",
+          "allowEnd": "Allow end",
+          "spawnProtection": "Spawn protection",
+          "resourcePackage": "Resource package",
+          "weather": "Weather",
+          "buildHeightLimit": "Max. Build height",
+          "chatColor": "Chat colors",
+          "userColor": "User colors",
+          "adminColor": "Admin colors",
+          "visibility": "Visibility",
+          "attitudes": "World attitudes",
+          "keepInventory": "Keep inventory",
+          "enableMonsters": "Monster",
+          "enableVillagers": "Villager",
+          "enableAnimals": "Animal",
+          "gameMode": "Game Mode",
+          "difficulty": "Difficulty",
+          "showAchievements": "Show achievements",
+          "resourcePack": "Resource Pack"
+        },
+        "worldSettings": "World Settings",
+        "moreSettings": "More Settings",
+        "gameSettings": "Game Settings",
+        "restore": "Restore default",
+        "unknown": "Unknown",
+        "info": "Info"
+      },
+      "data": {
+        "activity": {
+          "serverActivity": "Server Activity",
+          "showMore": "Show More",
+          "serverStarted": "Server Started",
+          "backupsEnabled": "Backups Enabled",
+          "backupsDisabled": "Backups Disabled",
+          "serverStopped": "Server Stopped",
+          "unknown": "Unknown"
+        }
+      }
+    },
+    "VERSION_MENU": {
+      "DEFAULT_MAP": "Default Map",
+      "AUTOGENERATED_MAP": "autogenerated Map",
+      "JAVA_SERVER": "Java Server",
+      "AVAILABLE_PLUGINS": "Available plugins"
+    },
+    "WORLD_MENU": {
+      "DEFAULT_MAP": "Default Map",
+      "AUTOGENERATED_MAP": "autogenerated Map",
+      "SELECT_FROM_GALLERY": "Select From Gallery"
+    },
+    "PLUGINS_MENU": {
+      "SELECTED_PLUGINS": "Selected plugins"
+    },
+    "PLAYERS_MENU": {
+      "OPERATOR": "Operator",
+      "WHITELIST": "Whitelist",
+      "BANNED_USERS": "Banned users",
+      "BANNED_IPS": "Banned IPs",
+      "NEW_PLAYER": "New player",
+      "NAME": "Name",
+      "CONFIRM": "Confirm",
+      "CANCEL": "Cancel",
+      "THE_TEXT_SHOULD_INCLUDE_2_16_SYMBOLS": "The text should include 2-16 symbols."
+    },
+    "STATISTICS_MENU": {
+      "PROJECT_STARTED": "Project started",
+      "UNIQUE_USER": "Unique user",
+      "MAIL_SERVER_STARTED": "mail Server started",
+      "PLUGINS_IN_USE": "Plugins in use",
+      "SHARE_LINK_STATISTICS": "Share Link Statistics",
+      "USERS_HAVE_TO_IMPORT_YOUR_PROJECT": "Users have to import your project",
+      "YOU_CAN_FIND_YOUR_SHARE_LINK_UNDER_DATA_ABOUT_WHICH_OTHER_USERS_CAN_IMPORT_YOUR_PROJECT": "You can find your share link under data about which other users can import your project",
+      "SERVER_PERFORMANCE": "Server performance",
+      "STORAGE_SPACE": "Storage space",
+      "RANDOM_ACCESS_MEMORY": "Random access memory"
+    },
+    "DATA_MENU": {
+      "SHARE_YOUR_PROJECT_VIA_LINK": "Share your project via link",
+      "PROJECT_NAME": "Project name",
+      "DESCRIPTION": "Description",
+      "DESCRIPTION_DETAIL": "Our Wallkomens Server to show you how easy it is to share content with friends from now on.",
+      "LAST_CHANGE": "Last change",
+      "LINK_IS_DEACTIVATED": "Link is deactivated",
+      "UPDATE_LINK": "Update link",
+      "SERVER_BACKUP": "Server Backup",
+      "DATABASE_BACKUP": "Database Backup",
+      "WORLD_BACKUP": "World Backup",
+      "FROM": "from",
+      "CONNECT_TO_GOOGLE_TO_SYNC": "Connect to Google to sync.",
+      "signInWithGoogle_ACCOUNT": "Sign in with Google Account",
+      "signUpWithGoogle_ACCOUNT": "Sign up with Google Account",
+      "FILE_MANAGER": "File Manager",
+      "MYSQL_ACCESS": "MySql Access",
+      "NAME": "Name",
+      "USER": "User",
+      "INFO": "Info",
+      "EDIT": "Edit",
+      "PROJECT_DELETE": "Project delete"
+    },
+    "SETTINGS": {
+      "PROFILE_SETTINGS": "Profile settings",
+      "PROFILE_PICTURE": "Profile picture",
+      "DELETE_AVATAR": "Delete avatar",
+      "USERNAME": "Username",
+      "E_MAIL_ADDRESS": "E-mail address",
+      "LANGUAGE": "language",
+      "NEW_PASSWORD": "New password",
+      "2_FA_ACTIVATE": "2FA Activate",
+      "OLD_PASSWORD": "Old password",
+      "ADVERTISED_BY": "Advertised by",
+      "SAVE_DATA": "Save data",
+      "NAME": "Name",
+      "CONFIRM": "Confirm",
+      "CANCEL": "Cancel"
+    },
+    "PROJECT_OVERVIEW": {
+      "NEW_PROJECT": "New project",
+      "ACTIVE": "Active",
+      "IS_STARTED": "Is started",
+      "PROJECT": "Project"
+    },
+    "PRO_UPGRADE": {
+      "UPTIME": "Uptime",
+      "IMMEDIATE_DEPLOYMENT": "Immediate deployment",
+      "SECURE_PAYMENT_PROCESSING": "Secure payment processing",
+      "MONTH": "Month",
+      "MONTHS": "Months",
+      "IN_THE_CART": "In the cart",
+      "PRO_UPGRADE_DESCRIPTION": "Start for free or power through with our Pro Rank: This is constantly being developed and offers you everything you need to build your server project exactly according to your ideas.",
+      "START_IMPORT_SERVER": "Start & import server",
+      "ADVERTISING": "Advertising",
+      "WAITING_TIME_FOR_START_IMPORT": "Waiting time for start & import",
+      "UPLOAD_YOUR_OWN_PLUGINS": "Upload your own plugins",
+      "ADD_PROJECT_MANAGER": "Add project manager",
+      "EXCLUSIVE_CONTENT": "Exclusive content",
+      "INACTIVITY_DELETION": "Inactivity deletion",
+      "EMAIL_SUPPORT": "Email support",
+      "OWN_SERVER_MOTD": "Own server Motd",
+      "SLOTS": "Slots",
+      "PRO_BADGE": "Pro Badge",
+      "NUMBER_OF_SERVER_PROJECTS": "Number of server projects",
+      "AFTER_14_DAYS": "After 14 days",
+      "LOW_PRIORITY": "Low priority",
+      "AD_FREE": "Ad-free",
+      "INSTANT_START_IMPORT": "Instant start & import",
+      "ALL": "All",
+      "UNLIMITED_TIME": "Unlimited time",
+      "HIGHEST_PRIORITY": "Highest priority",
+      "FULLY_ADJUSTABLE": "Fully adjustable",
+      "IN_THE_FORUM_WEBSITE": "In the forum + website",
+      "FREE": "FREE",
+      "PRO": "PRO"
+    }
+  },
+  "SHARING_PAGE": {
+    "BUBICRAFTS_WELCOME_SERVER": "Bubicrafts welcome server",
+    "DESCRIPTION": "Description",
+    "ABOUT_WELCOME_SERVER": "Our welcome server to show you how easy it is to share content with friends from now on.",
+    "LAST_CHANGE": "Last change",
+    "P_M": "p.m.",
+    "CREATED_BY": "Created by",
+    "THIS_SERVER_PROJECT_CAN_BE_IMPORTED_AND_STARTED": "This server project can be imported and started",
+    "THE_CREATOR_HAS_DETERMINED_THAT_THIS_PROJECT_WILL_NOT_CONTINUE": "The creator has determined that this project will not continue",
+    "IN": "In",
+    "IMPORT": "import"
+  },
+  "NAVIGATION_BAR": {
+    "SETTINGS": "Settings",
+    "DASHBOARD": "Dashboard",
+    "UPGRADE": "Upgrade",
+    "LOGOUT": "Logout",
+    "SERVER_LIST": "Server list",
+    "SUPPORT": "Support",
+    "FORUM": "Forum",
+    "LOCK": "lock",
+    "LOG_IN": "Log In"
+  },
+  "NOT_FOUND_PAGE": {
+    "GO_BACK_TO_HOME": "Go Back to Home"
+  },
+  "HOME_PAGE": {
+    "OVERVIEW": {
+      "YOUR_JOYSTACK_BENEFITS": "Your joystack benefits",
+      "START_COMPLETELY_FREE": "Start completely free",
+      "ABOUT_FIRST_CARD": "No credit card or Paysafecard necessary to start your server with a joystick. We want to enable everyone to play on their own cloud servers.",
+      "MODPACKS_PLUGINS_MAPS": "Modpacks, Plugins & Maps",
+      "ABOUT_SECOND_CARD": "Install mods, plugins and maps from our large collection or upload them yourself with Pro. You can suggest other modpacks in the forum.",
+      "SHARE_IMPORT_VIA_LINK": "Share & import via link",
+      "ABOUT_THIRD_CARD": "If you want to show plugins, maps or server creations to the world, then just share a link of your project so that other users can clone it.",
+      "EASILY_ADJUSTABLE": "Easily adjustable",
+      "ABOUT_FOURTH_CARD": "In our tailor-made dashboard, you have configured your server with just a few clicks. A pleasant experience."
+    },
+    "HEADER": {
+      "ONE_OF_YOUR_FREE_SERVERS": "One of your free servers",
+      "FREE": "Free",
+      "FULL_CONTROL": "Full control",
+      "MODS_PLUGINS": "Mods & Plugins",
+      "PICK_YOUR_OWN_DOMAIN_HOSTED_BY_JOYSTACK": "Pick your own domain - hosted by joystack",
+      "A_NEW_WAY_TO_CREATE_MINECRAFT_SERVERS_AND_SHARE_CONTENT": "A new way to create Minecraft servers and share content",
+      "START_SERVER_FOR_FREE": "Start server for free"
+    }
+  },
+  "login": {
+    "signUpWithGoogle": "Sign up with Google",
+    "signInWithGoogle": "Sign in with Google",
+    "loginWithEmail": "or login with email",
+    "forgotPassword": "Forgot your password?",
+    "email": "Email",
+    "password": "Password",
+    "registerInsteadHint": "Don't have a Joystack account yet?",
+    "registerAccount": "Register a user account",
+    "useAccount": "Use your Joystack account",
+    "loading": "Loading...",
+    "name": "Name",
+    "signIn": "Sign In",
+    "loginInsteadHint": "You already have a Joystack account?",
+    "signInWithExistingAccount": "Sign in with your account",
+    "createYourAccount": "Create your Joystack account"
+  },
+  "setup": {
+    "domain": "Domain",
+    "realm": "Realm",
+    "advanced-hint": "Advanced settings can be found in the dashboard",
+    "name": {
+      "realm": "Realm Name",
+      "domain": "Domain Name",
+      "description": "Description"
+    },
+    "summary": {
+      "title": "Your server is ready",
+      "description": "Sign up to start or edit further details on your project"
+    }
+  },
+  "SETUP_PAGE": {
+    "HELP": "Help",
+    "PRIVACY": "Privacy",
+    "TERMS_OF_USE": "Terms of Use",
+    "DOWNLOADS": "downloads",
+    "CHOSEN_MODPACK": "Chosen Modpack",
+    "TO_THE_NEXT_STEP": "Advance",
+    "REINSTALL": "Reinstall",
+    "MODPACK_SERVER": "Modpack Server",
+    "AVAILABLE_MODPACKS": "Available modpacks",
+    "JAVA_SERVER": "Java Server",
+    "BACK": "Back",
+    "PROJECT_NAME": "Project Name",
+    "VERSION": "Version",
+    "COMING_SOON": "Coming Soon",
+    "SKIP": "Skip",
+    "INFO": "Info",
+    "SERVER_HOSTED_BY_JOYSTACK_COM": "Server hosted by joystack.com",
+    "DOMAIN_NAME": "Domain Name",
+    "OWNER": "Owner",
+    "YOU_FIND_ADVANCED_SETTINGS_IN_THE_DASHBOARD": "You find advanced settings in the dashboard",
+    "MAIN_SERVER": "Main Server",
+    "NAME": "Name",
+    "DOMAIN": "Domain",
+    "OPERATOR": "Operator",
+    "SLOTS": "Slots",
+    "TYPE": "Type",
+    "SPIGOT": "Spigot",
+    "WORLD": "World",
+    "GENERATED": "Generated",
+    "REGION": "Region",
+    "BEST_PING": "Best Ping",
+    "WHITELIST": "Whitelist",
+    "ENABLED": "Enabled",
+    "PRICE": "Price",
+    "MAP_SELECTION": "Map selection",
+    "AUTO_MAP_GENERATION": "Auto Map Generation",
+    "GENERATE_NEW_MAP": "Generate New Map",
+    "UPLOAD_YOUR_OWN": "Upload your own",
+    "BROWSE": "Browse",
+    "SELECT_FROM_GALLERY": "Select From Gallery",
+    "SERVER_TYPE": "Server type",
+    "WORLD_SELECTION": "World selection",
+    "START_THE_SERVER": "Start the server",
+    "YOUR_SERVER_IS_READY": "Your server is ready",
+    "SIGN_UP_TO_START_OR_EDIT_FURTHER_DETAILS_ON_YOUR_PROJECT": "Sign up to start or edit further details on your project",
+    "MY_COOL_INDIAN_SERVER": "My cool Indian server",
+    "HOSTED_BY": "Hosted by"
+  }
+}

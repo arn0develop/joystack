@@ -1,0 +1,41 @@
+@import '../../config';
+
+.accordion-button {
+  font-size: 1.5em;
+  position: relative;
+  border: $primaryTextColor solid 0.07em;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  span {
+    position: absolute;
+    transition: 0.3s;
+    background: $primaryTextColor;
+    border-radius: 38%;
+    &:first-of-type {
+      top: 25%;
+      bottom: 25%;
+      width: 10%;
+      left: 45%;
+    }
+    &:last-of-type {
+      left: 25%;
+      right: 25%;
+      height: 10%;
+      top: 45%;
+    }
+  }
+  &.accordion-button-disabled {
+    span {
+      &:first-of-type,
+      &:last-of-type {
+        transform: rotate(90deg);
+      }
+      &:last-of-type {
+        left: 50%;
+        right: 50%;
+      }
+    }
+  }
+}

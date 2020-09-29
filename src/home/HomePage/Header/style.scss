@@ -1,0 +1,43 @@
+.home-catchphrase > h1 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: white !important;
+  width: 70%;
+  margin: 100px auto auto auto;
+  word-wrap: break-spaces;
+}
+
+.app-header {
+  background-repeat: no-repeat !important;
+  background-size: 100% 82% !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-md-12 {
+  padding: 0;
+}
+
+.highlight {
+  color: #F77349;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.home-badge {
+  margin: 50px;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .home-catchphrase > h1 {
+    font-size: 2.0rem !important;
+    line-height: 2.5rem !important;
+  }
+}

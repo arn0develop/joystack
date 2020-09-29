@@ -1,0 +1,97 @@
+@import '../../../../../config';
+
+.status-card {
+  background-color: $primaryWhite;
+  padding: 12px 16px;
+  min-height: 280px;
+  .time {
+    .anticon {
+      font-size: 20px;
+      margin-right: 5px;
+      vertical-align: -1px;
+    }
+  }
+  .description {
+    padding-left: 40px;
+    font-size: 16px;
+  }
+  .status-card-header {
+    .title {
+      font-size: 16px;
+      img {
+        margin-right: 10px;
+        width: 30px;
+        vertical-align: -10px;
+      }
+    }
+  }
+  .status-card-body {
+    justify-items: center;
+    align-items: center;
+    row-gap: 15px;
+    .status-card-button-container {
+      align-items: center;
+      display: flex;
+      position: relative;
+      margin: auto;
+      min-height: 128px;
+      .loading-content {
+        min-height: 120px;
+      }
+      .status-update-button {
+        color: $primaryWhite;
+        min-width: 80px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 7px 0;
+        outline: 0;
+        border: 0;
+        z-index: 999;
+        margin: auto;
+        &:hover {
+          transition-duration: .6s;
+          box-shadow: 0 0 10px 5px #ddd4d4b9;
+        }
+      }
+      .status-update-button-idle {
+        background-color: #36bd31;
+      }
+      .status-update-button-running {
+        background-color: #dd2d1d;
+      }
+      .status-update-button-stopping {
+        background-color: #acacac;
+      }
+      .status-update-button-starting {
+        background-color: #acacac;
+      }
+      .status-update-button-loading {
+        background-color: #acacac;
+      }
+    }
+    .skip-button-container {
+      text-align: center;
+      align-items: center;
+      .skip-button {
+        @include mainButton(7px 0, 10px);
+        margin: 0 10px;
+        background-color: #006fd4;
+        font-size: 18px;
+        min-width: 80px;
+        font-weight: bold;
+        &:hover {
+          background-color: #0b64b8;
+          box-shadow: 0 0 10px 1px #0b85f666;
+        }
+      }
+    }
+    .loading-text {
+      white-space: nowrap;
+      img {
+        width: 25px;
+        vertical-align: -5px;
+      }
+    }
+  }
+}

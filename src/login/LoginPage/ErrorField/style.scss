@@ -1,0 +1,16 @@
+.login-error-field {
+  background-color: #ff645e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+  i {
+    float: left;
+  }
+}

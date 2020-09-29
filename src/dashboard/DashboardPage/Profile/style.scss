@@ -1,0 +1,156 @@
+@import '../../../config';
+
+%baseContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 500;
+  font-size: 16px;
+  align-items: center;
+  @media only screen and (max-width: 425px) {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.dashboard-settings-content {
+  background-color: $primaryWhite;
+  color: $primaryTextColor;
+  padding: 16px 24px;
+  max-width: 1307px;
+  margin: auto;
+  -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  border-radius: 10px;
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccd3dd;
+  }
+  .select-settings-content {
+    @extend %baseContent;
+    gap: 25px 50px;
+    margin-top: 30px;
+    padding: 0 16px;
+    .hidden {
+      visibility: hidden;
+      .ant-input {
+        transition: all 0s;
+      }
+    }
+    .input-item-content {
+      .ant-input {
+        transition: all 0s;
+      }
+    }
+  }
+  .profile-picture-content {
+    @extend %baseContent;
+    .edit-profile-picture {
+      display: grid;
+      position: relative;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-items: start;
+      color: $secondaryLightGray;
+      font-size: 14px;
+      column-gap: 10px;
+      img {
+        width: 40px;
+      }
+      .anticon {
+        vertical-align: 0;
+        cursor: pointer;
+      }
+      .delete-avatar {
+        cursor: pointer;
+      }
+      .ant-input {
+        min-width: 55px;
+      }
+      .confirm {
+        @include mainButton(5px 12px, 10px);
+        &:hover {
+          box-shadow: 0 0 10px 0 #f7744a66;
+        }
+      }
+      .cancel {
+        @include mainButton(5px 12px, 10px);
+        background-color: $secondaryLightGray;
+        &:hover {
+          transition-duration: 0.6s;
+          background-color: #c1c7ce;
+          box-shadow: 0 0 10px 0 $secondaryLightGray;
+        }
+      }
+    }
+  }
+  .select-language-content {
+    @extend %baseContent;
+    .ant-select-selector {
+      height: 45px;
+      padding-top: 7px;
+      img {
+        vertical-align: -7px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .switch-container {
+    grid-template-columns: 50% 1fr auto;
+    column-gap: 0;
+  }
+  .input-item-content {
+    @extend %baseContent;
+    .ant-input {
+      height: 45px;
+      border-radius: 5px;
+    }
+  }
+  .save-data-content {
+    display: grid;
+    place-content: center;
+    height: 70px;
+    margin-top: 30px;
+    button {
+      @include mainButton(7px 30px, 5px);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .select-settings-content {
+      grid-template-columns: auto;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    padding: 16px;
+    .profile-picture-content {
+      .edit-profile-picture {
+        img {
+          width: 35px;
+        }
+      }
+    }
+    .select-settings-content {
+      grid-template-columns: auto;
+    }
+    .switch-container {
+      padding: 0;
+    }
+    .select-language-content {
+      .ant-select-selector {
+        height: 35px;
+        padding-top: 2px;
+      }
+    }
+    .input-item-content {
+      .ant-input {
+        height: 35px;
+      }
+    }
+    .save-data-content {
+      height: 50px;
+    }
+  }
+}

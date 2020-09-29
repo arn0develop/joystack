@@ -1,0 +1,138 @@
+@import '../../../../../config';
+
+%title {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: $primaryTextColor;
+}
+
+%baseContent {
+  background-color: $primaryWhite;
+  margin-top: 20px;
+  padding: 16px 24px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  @media screen and (max-width: 768px) {
+    padding: 12px;
+  }
+}
+
+.map-selection-content {
+  @extend %baseContent;
+  .title {
+    @extend %title;
+  }
+  .map-generator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 12px;
+    .auto-map-generator,
+    .upload {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 10px;
+      align-items: center;
+      .description {
+        color: #000;
+      }
+      .info {
+        border-radius: 50%;
+        width: 30px;
+        padding: 5px;
+        justify-self: right;
+        display: grid;
+        cursor: pointer;
+        place-content: center;
+        background-color: #fbf1e9;
+        color: $highlightColor;
+      }
+    }
+    .auto-map-generator {
+      .map-generator-button {
+        @include mainButton(7px 30px, 50px);
+        width: max-content;
+        justify-self: center;
+        white-space: nowrap;
+        border: 0;
+      }
+    }
+    .upload {
+      position: relative;
+      .ant-upload-select {
+        cursor: pointer;
+        padding-left: 12px;
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid $secondaryLightGray;
+        .ant-upload {
+          height: 40px;
+          display: grid;
+          grid-auto-flow: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .icon-content {
+          display: grid;
+          place-content: center;
+          height: 100%;
+          background-color: #f4f7fa;
+          border-radius: 0 10px 10px 0;
+          width: 40px;
+          img {
+            transform: rotate(180deg);
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .map-generator {
+      grid-template-columns: 1fr;
+      .auto-map-generator {
+        grid-template-columns: 40% auto auto;
+        .map-generator-button {
+          padding: 7px 10px;
+        }
+      }
+      .upload {
+        grid-template-columns: 40% auto auto;
+        .ant-upload-select {
+          .ant-upload {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    padding: 12px;
+    .map-generator {
+      .auto-map-generator,
+      .upload {
+        font-size: 12px;
+        grid-template-columns: 45% auto auto;
+        column-gap: 3px;
+      }
+      .auto-map-generator {
+        .map-generator-button {
+          font-size: 10px;
+          padding: 5px 8px;
+        }
+      }
+      .upload {
+        .ant-upload-select {
+          .ant-upload {
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}

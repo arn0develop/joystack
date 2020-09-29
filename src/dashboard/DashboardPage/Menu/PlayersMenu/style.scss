@@ -1,0 +1,9 @@
+.players-menu-content {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  row-gap: 20px;
+  @media only screen and (max-width: 425px) {
+    width: 100%;
+  }
+}

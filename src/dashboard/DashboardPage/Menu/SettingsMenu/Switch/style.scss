@@ -1,0 +1,31 @@
+@import '../../../../../config';
+
+.switch-container {
+  display: grid;
+  grid-template-columns: 40% 45% 1fr;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 500;
+  color: $primaryTextColor;
+  .info {
+    padding: 1px 10px;
+    background-color: #fbf1e9;
+    border-radius: 50%;
+    font-size: 16px;
+    color: $highlightColor;
+    cursor: pointer;
+    justify-self: end;
+  }
+  .switcher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: start;
+    .ant-switch {
+      background-color: #e8ecef;
+      &.ant-switch-checked {
+        background-color: #57e69d;
+      }
+    }
+  }
+}

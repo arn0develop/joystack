@@ -1,0 +1,25 @@
+@import '../../../config';
+
+.main-button {
+  @include mainButton(10px 30px, 50px);
+  width: 100%;
+  max-width: 250px;
+  user-select: none;
+  &:focus {
+    outline: 0;
+  }
+  &[disabled] {
+    background-color: $secondaryLightGray;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+.xx{
+  background: #0b64b8;
+}
+
+.centered-button {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}

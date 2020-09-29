@@ -1,0 +1,28 @@
+@import "../../../config";
+
+.step-container {
+  max-width: 1200px;
+  margin: auto;
+  .step-content {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .step-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 50px auto 20px;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (max-width: 560px){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+  }
+
+}

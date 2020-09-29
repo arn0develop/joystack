@@ -1,0 +1,22 @@
+@import '../../../../../config';
+
+.badge-container {
+  max-width: 600px;
+  margin: auto auto 20px;
+  position: relative;
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    border-radius: 50%;
+    &.offline {
+      background-color: #ff0000;
+    }
+    &.online {
+      background-color: #37db52;
+    }
+  }
+}

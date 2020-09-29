@@ -1,0 +1,129 @@
+@import '../../../config';
+
+.dashboard-header {
+  font-family: $textFont;
+  position: sticky;
+  top: 0;
+  background-color: $primaryWhite;
+  z-index: 99;
+  padding: 10px 15px;
+  .dashboard-header-content{
+    padding: 0 60px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-left: 50px;
+    max-width: 95%;
+
+    @media screen and (max-width: 1024px){
+      margin-left: 0;
+    }
+
+    .burger{
+      display: none;
+      margin-right: 20px;
+
+      .line{
+        width: 30px;
+        border-radius: 2px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        margin: 6px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      &.is-active .line:nth-child(2){
+        opacity: 0;
+      }
+
+      &.is-active .line:nth-child(1){
+        -webkit-transform: translateY(7px) rotate(45deg);
+        -ms-transform: translateY(7px) rotate(45deg);
+        -o-transform: translateY(7px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      &.is-active .line:nth-child(3){
+        -webkit-transform: translateY(-9px) rotate(-45deg);
+        -ms-transform: translateY(-9px) rotate(-45deg);
+        -o-transform: translateY(-9px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
+      }
+
+      @media screen and (max-width: 1024px){
+        display: block;
+      }
+    }
+
+    .logout-content {
+      .burger-dropdown {
+      display: none;
+      }
+      .forum {
+        color: initial;
+        margin-right: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        &:hover {
+          color: #7e7e7e;
+        }
+      }
+      .ant-btn {
+        height: max-content;
+        border: 0;
+        color: initial;
+        .user-image {
+          margin-right: 15px;
+          border-radius: 30%;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+          transition: all .6s;
+        }
+        &:hover {
+          color: initial;
+          outline: none;
+          box-shadow: none;
+          .user-image {
+            margin-right: 15px;
+            border-radius: 30%;
+            transition: all .6s;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+          }
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+
+        }
+        &::after {
+          outline: none;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+
+}
+
+.header-language-dropdown.ant-dropdown {
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 3px;
+  box-shadow: -1px 1px 9px 4px rgba(185, 192, 197, 0.6);
+  overflow: hidden;
+  position: fixed;
+  .ant-dropdown-menu-item {
+    padding: 10px 16px;
+    .anticon {
+      vertical-align: 0;
+      font-size: 16px;
+    }
+  }
+}

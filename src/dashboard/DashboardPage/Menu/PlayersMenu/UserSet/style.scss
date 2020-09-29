@@ -1,0 +1,133 @@
+@import '../../../../../config';
+
+.user-category-list-content {
+  .ant-collapse {
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+    box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+    background-color: white;
+    border-radius: 10px;
+    .ant-collapse-item {
+      border-bottom: 0;
+      .ant-collapse-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 16px 24px;
+        &::before,
+        &::after {
+          content: none;
+        }
+        .title {
+          color: $primaryTextColor;
+          margin: 0;
+          font-size: 16px;
+          font-weight: bold;
+          .ant-badge {
+            margin-left: 10px;
+            .ant-badge-count {
+              font-size: 14px;
+              background-color: $highlightColor;
+            }
+          }
+        }
+      }
+      .ant-collapse-content {
+        .ant-collapse-content-box {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+          .players-content {
+            transition: .3s;
+            .add-player-content {
+              display: inline-grid;
+              place-content: center;
+              align-items: center;
+              grid-auto-flow: column;
+              column-gap: 10px;
+              vertical-align: 10px;
+              margin-right: 20px;
+              position: relative;
+              .add-player {
+                display: grid;
+                grid-auto-flow: column;
+                column-gap: 10px;
+                cursor: pointer;
+                padding-top: 5px;
+                &:hover {
+                  transition-duration: .6s;
+                  .player-name {
+                    color: #ff6431;
+                  }
+                  .anticon {
+                    background-color: #ff6431;
+                    box-shadow: 0 0 5px 1px #f7744a66;
+                  }
+                }
+                .player-name {
+                  color: $highlightColor;
+                }
+                .anticon {
+                  background-color: $highlightColor;
+                  padding: 5px;
+                  border-radius: 50%;
+                  color: $primaryWhite;
+                }
+              }
+              .confirm {
+                @include mainButton(5px 12px, 10px);
+                &:hover {
+                  box-shadow: 0 0 10px 0 #f7744a66;
+                }
+              }
+              .cancel {
+                @include mainButton(5px 12px, 10px);
+                background-color: $secondaryLightGray;
+                &:hover {
+                  transition-duration: .6s;
+                  background-color: #c1c7ce;
+                  box-shadow: 0 0 10px 0 $secondaryLightGray;
+                }
+              }
+              .add-user-input {
+                min-width: 55px;
+                border-radius: 5px;
+                outline: 0;
+                &.input-error, &.input-error:focus {
+                  border: 2px solid #f31818;
+                }
+              }
+            }
+          }
+        }
+        &.ant-collapse-content-active {
+          padding: 0 24px;
+          display: grid;
+          overflow: visible;
+        }
+        &::before {
+          content: '';
+          border-top: 1px solid #ccd3dd;
+          width: 100%;
+          display: block;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .ant-collapse {
+      -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+      -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+      box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+      .ant-collapse-item {
+        .ant-collapse-content.ant-collapse-content-active {
+          padding: 0 16px;
+        }
+        .ant-collapse-header {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}

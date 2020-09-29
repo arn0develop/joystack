@@ -1,0 +1,127 @@
+@import '../../../../config';
+
+.server-type-content {
+  .server-type-description {
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-weight: 600;
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    margin: 50px auto;
+  }
+  .servers-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+    .main-box {
+      background-color: $primaryWhite;
+      text-align: center;
+      max-width: 300px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      transition: all .3s;
+      user-select: none;
+      cursor: pointer;
+      height: 160px;
+      overflow: hidden;
+
+
+      embed {
+        cursor: pointer;
+        pointer-events: none;
+        user-select: none;
+        background-color: #aaf792;
+        width: 100%;
+        height: 80px;
+        padding: 25px;
+        border-radius: 5px;
+        margin: auto;
+      }
+      embed.disabled {
+        background-color: #d0d0d0;
+      }
+      &.selected-server {
+        box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+      }
+      .box-title-content {
+        position: relative;
+        font-size: 16px;
+        margin-top: 10px;
+        .info {
+          background-color: #fbf1e9;
+          color: $highlightColor;
+          position: absolute;
+          border-radius: 50%;
+          font-size: 16px;
+          width: 25px;
+          height: 25px;
+          right: 5px;
+          top: 0;
+        }
+        @media screen and (max-width: 1250px) {
+          font-size: 14px;
+          .info {
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            top: 3px;
+          }
+        }
+      }
+    }
+    .selected-server {
+      height: 280px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: 300px;
+      row-gap: 30px;
+      display: block;
+      .modpack,
+      .minecraft,
+      .bedrock {
+        height: 145px;
+        padding: 16px 24px;
+      }
+      .minecraft {
+        margin: 30px 0;
+      }
+      .selected-server {
+        &.modpack {
+          height: 208px;
+        }
+        &.minecraft {
+          height: 255px;
+        }
+      }
+    }
+  }
+
+  height: 351px;
+
+}
+
+.server-type-content.dashboard-page{
+  height: 226px;
+}
+.options-content {
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  .ant-select {
+    width: 100%;
+  }
+  .ant-select-selector {
+    margin: 25px 0;
+    font-weight: 500;
+  }
+}

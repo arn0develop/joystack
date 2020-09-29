@@ -1,0 +1,102 @@
+@import '../../../../config';
+
+@font-face {
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../../../assets/fonts/Minecraftia.ttf);
+}
+
+.settings-container {
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  .settings-content {
+    max-width: 800px;
+    margin: auto;
+    h5 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .main-box {
+      box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+      height: 400px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background-color: $primaryWhite;
+      display: grid;
+      align-content: center;
+      .main-box-content {
+        width: 60%;
+        margin: auto;
+        text-align: left;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 640px) {
+        .main-box-content {
+          width: 90%;
+        }
+      }
+
+      .name-content {
+        .ant-input {
+          height: 40px;
+          border-radius: 10px;
+        }
+        margin-bottom: 20px;
+      }
+    }
+    .link-content {
+      margin-bottom: 20px;
+      text-align: center;
+      span {
+        color: #000;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.badge-container {
+  max-width: 800px;
+  margin: 50px auto auto auto;
+}
+
+.domain-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-bottom: 20px;
+  .ant-input {
+    height: 40px;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .ant-select {
+    .ant-select-selector {
+      border-radius: 0 10px 10px 0;
+      height: 40px;
+      .ant-select-selection-item {
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.icon-selector-preview {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid #b8c0c4;
+  transition: all .2s;
+  padding: 5px;
+  &:hover {
+    box-shadow: 0 0 5px 0 #bebebe;
+  }
+  img {
+    border-radius: 5px;
+  }
+}

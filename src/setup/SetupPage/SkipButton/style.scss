@@ -1,0 +1,50 @@
+.skip-button-container {
+  width: max-content;
+  margin-left: 73%;
+
+  @media screen and (max-width: 768px ){
+    margin: 20px auto;
+  }
+
+  .next-button {
+    margin: auto;
+    color: #c4ccd8;
+    transition: color .3s;
+    background-color: inherit;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    &:hover {
+      color: #f7744a;
+    }
+    &:focus {
+      outline: none;
+    }
+    .anticon {
+      vertical-align: 1px;
+      margin-left: 5px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .next-button {
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .next-button {
+      position: initial;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+
+}

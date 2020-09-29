@@ -1,0 +1,92 @@
+@import '../../../../config';
+
+.selected-gallery-content {
+  background-color: $primaryWhite;
+  color: $primaryTextColor;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  height: 0;
+  transition: .3s;
+  overflow: hidden;
+  padding-right: 24px;
+  padding-left: 24px;
+  &.opened {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+  .selected-gallery {
+    margin-top: 10px;
+      &::before {
+        content: '';
+        border-top: 1px solid #ccd3dd;
+        display: block;
+        padding-top: 10px;
+      }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        user-select: none;
+        display: inline-grid;
+        grid-template-columns: 10px auto 30px;
+        column-gap: 25px;
+        align-items: center;
+        border-radius: 7px;
+        height: 35px;
+        background-color: #f4f7fa;
+        margin: 10px;
+        font-size: 16px;
+        min-width: 200px;
+        .anticon {
+          justify-self: center;
+          font-size: 12px;
+          cursor: pointer;
+          &:hover {
+            color: #ff0000;
+          }
+        }
+        &:hover {
+          -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+          -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+          box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+          transition: .3s;
+        }
+      }
+      li:before {
+        content: '';
+        background-color: $highlightColor;
+        height: 100%;
+        border-radius: 3px 0 0 3px;
+      }
+    }
+  }
+  .title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .selected {
+    border-radius: 30px;
+    padding: 3px 5px;
+    margin-left: 20px;
+    color: #4ecfbb;
+    border: 2px solid #4ecfbb;
+    background-color: #e3fbf7;
+  }
+
+  @media screen and (max-width: 768px) {
+    &.opened {
+      padding: 12px;
+    }
+    .selected {
+      margin-left: 5px;
+      padding: 1px 5px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import './../../../config';
+
+.sharing-container {
+  background-repeat: no-repeat !important;
+  background-size: 100% 70% !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primaryTextColor;
+  h5 {
+    color: $primaryTextColor;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .sharing-content {
+    max-width: 780px;
+    padding: 24px;
+    background-color: $primaryWhite;
+    margin-top: 220px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px 0px $secondaryLightGray;
+    .welcome-bubicraft-server-content {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 20px;
+      .welcome-bubicraft-server-description {
+        p {
+          margin-bottom: 0;
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .bubicraft-image-content {
+          align-self: center;
+          img {
+            width: 100px;
+          }
+        }
+        .welcome-bubicraft-server-description {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .server-details {
+      margin-top: 10px;
+      p {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 10px;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+    .select-server-content {
+      padding: 24px;
+      background-color: $primaryWhite;
+      display: grid;
+      place-content: center;
+      grid-template-columns: 180px 140px;
+      .ant-input {
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+      }
+      .ant-select {
+        .ant-select-selector {
+          border-radius: 0 10px 10px 0;
+          height: 40px;
+          .ant-select-selection-item {
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+    .import-button-content {
+      text-align: center;
+      button {
+        border: 0;
+        outline: 0;
+        padding: 8px 20px;
+        border-radius: 20px;
+        color: $primaryWhite;
+        font-size: 18px;
+        background-color: $highlightColor;
+        img {
+          width: 18px;
+          margin: 0 7px;
+          vertical-align: -5px;
+        }
+      }
+    }
+  }
+}

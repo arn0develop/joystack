@@ -1,0 +1,39 @@
+@import '../../../../config';
+
+.project-overview-item-content {
+  display: grid;
+  padding: 8px;
+  justify-items: center;
+  row-gap: 5px;
+  border-radius: 10px;
+  .name {
+    font-size: 16px;
+  }
+  .active,
+  .deActive {
+    &::before {
+      content: '';
+      height: 7px;
+      width: 7px;
+      display: inline-block;
+      vertical-align: 1px;
+      margin-right: 7px;
+      border-radius: 50%;
+    }
+  }
+  .active::before {
+    background-color: #5fe962;
+  }
+  .deActive::before {
+    background-color: #eba828;
+  }
+  @media screen and (max-width: 1024px) {
+    .name {
+      font-size: 12px;
+    }
+    .active,
+    .deActive {
+      font-size: 12px;
+    }
+  }
+}

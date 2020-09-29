@@ -1,0 +1,37 @@
+@import '../../../../config';
+
+.pagination-content {
+  text-align: center;
+  padding: 10px 0;
+  .ant-pagination {
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      display: none;
+    }
+    .ant-pagination-item {
+      border: 0;
+      border-radius: 50%;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    .ant-pagination-item-active {
+      background-color: #fbf1e9;
+    }
+    .ant-pagination-item a {
+      background-color: inherit;
+      border-radius: 50%;
+      color: $secondaryLightGray;
+      padding-top: 1px;
+    }
+    .ant-pagination-item-active a {
+      color: $highlightColor;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .ant-pagination {
+      .ant-pagination-item {
+        margin: 0 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "../../../../config";
+
+.gallery-item-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 25px;
+  border-radius: 10px;
+  padding: 8px;
+  overflow: hidden;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+    background-color: #f4f7fa;
+    box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  }
+  .image-content {
+    user-select: none;
+    position: relative;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .add-gallery {
+      user-select: none;
+      display: grid;
+      place-content: center;
+      width: 37px;
+      height: 40px;
+      position: absolute;
+      bottom: 3px;
+      right: -5px;
+      background-color: $highlightColor;
+      color: $primaryWhite;
+      border: 0;
+      outline: 0;
+      border-radius: 10px;
+      z-index: 9;
+      .anticon {
+        color: $primaryWhite;
+        font-size: 15px;
+      }
+    }
+  }
+  .about-gallery {
+    display: grid;
+    align-content: center;
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      color: $primaryTextColor;
+    }
+    .description {
+      font-weight: 500;
+      color: $primaryTextColor;
+    }
+    .downloads {
+      color: $secondaryLightGray;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    column-gap: 15px;
+    .image-content {
+      position: relative;
+      width: 70px;
+      img{
+        width: 100%;
+      }
+      .add-gallery {
+        width: 27px;
+        height: 30px;
+        bottom: 3px;
+        right: -5px;
+        cursor: pointer;
+        .anticon {
+          font-size: 15px;
+        }
+      }
+    }
+    .about-gallery {
+      font-size: 10px;
+      .title {
+        font-size: 12px;
+      }
+    }
+  }
+}

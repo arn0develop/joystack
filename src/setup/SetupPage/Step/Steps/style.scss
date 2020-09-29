@@ -1,0 +1,102 @@
+@import '../../../../config';
+
+.steps-content {
+  background-color: $primaryWhite;
+  height: 170px;
+  margin-bottom: 20px;
+  .logo {
+    padding: 24px 0;
+    text-align: center;
+  }
+  .ant-steps {
+    width: max-content;
+    margin: auto;
+    .ant-steps-item-container {
+      text-align: center;
+      .ant-steps-item-tail {
+        width: 105%;
+        &::after {
+          height: 3px;
+          position: absolute;
+          top: 6px;
+          left: 46%;
+        }
+      }
+      .ant-steps-item-tail,
+      .ant-steps-item-icon,
+      .ant-steps-item-content {
+        margin: 0;
+      }
+    }
+    .ant-steps-item-finish,
+    .ant-steps-item-process {
+      .ant-steps-item-container {
+        .ant-steps-item-title {
+          color: $highlightColor;
+          font-weight: 500;
+        }
+      }
+    }
+    .ant-steps-item-wait {
+      .ant-steps-item-container {
+        .ant-steps-item-title {
+          color: $secondaryLightGray;
+          font-weight: 500;
+        }
+      }
+    }
+    .ant-steps-item-finish {
+      .ant-steps-item-tail::after {
+        background-color: $highlightColor;
+      }
+    }
+    .half {
+      .ant-steps-item-container {
+        .ant-steps-item-tail::after {
+          background: linear-gradient(90deg, $highlightColor 50%, #f0f0f0 50%);
+        }
+      }
+    }
+    .ant-steps-item-wait,
+    .ant-steps-item-finish,
+    .ant-steps-item-process {
+      cursor: pointer;
+      .ant-steps-item-icon {
+        background-color: $highlightColor;
+        width: 20px;
+        height: 20px;
+      }
+      &.inActive {
+        cursor: not-allowed;
+      }
+    }
+    .ant-steps-item-wait {
+      .ant-steps-item-icon {
+        background-color: $secondaryLightGray;
+      }
+    }
+    .ant-steps-item-icon > .ant-steps-icon {
+      .ant-steps-icon-dot {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      .ant-steps-item {
+        .ant-steps-item-container {
+          width: 80px;
+          .ant-steps-item-tail {
+            &::after {
+              left: 45%;
+            }
+          }
+          .ant-steps-item-content {
+            width: auto;
+          }
+        }
+        .ant-steps-item-title {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

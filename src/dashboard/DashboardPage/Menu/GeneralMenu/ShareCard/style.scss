@@ -1,0 +1,94 @@
+@import '../../../../../config.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.share-card {
+  padding: 12px 16px;
+  background-color: white;
+  position: relative;
+  .share-card-header {
+    .title {
+      font-size: 16px;
+      img {
+        margin-right: 10px;
+        width: 30px;
+      }
+    }
+  }
+  .share-card-content {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    .share-card-link {
+      display: flex;
+      vertical-align: center;
+      margin-top: 10px;
+      margin-left: 40px;
+      margin-right: 20px;
+      height: 40px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      min-width: 283px;
+      border: 1px solid #f7744a;
+      background-color: #f7744a;
+      transition: background-color 0.3s, box-shadow 0.2s ease-out;
+      &:hover {
+        box-shadow: 0 0 5px 1px rgba(247, 116, 74, 0.28);
+      }
+      &:active {
+        border: 1px solid #f84d1d;
+        background-color: #f84d1d;
+      }
+      p {
+        display: flex;
+        vertical-align: center;
+        padding: 8px 5px;
+        font-size: 14px;
+        font-family: 'Roboto Mono', monospace;
+        user-select: none;
+        height: 100%;
+        background-color: white;
+        min-width: calc(100% - 40px);
+        margin-bottom: 0;
+        &.copied {
+          color: #61be44;
+          justify-content: center;
+        }
+      }
+      .anticon {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+  }
+  .anticon-tool {
+    @include mainButton(5px, 50%);
+    transition-duration: 0.6s;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+.share-card-buttons {
+  display: flex;
+  position: relative;
+  .anticon {
+    margin-top: 10px;
+    @include mainButton(5px, 50%);
+    transition-duration: 0.6s;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 60px;
+    background-color: #35b4f8;
+    &:hover {
+      box-shadow: 0 0 10px 1px #7eccf6;
+      background-color: #57baf0;
+    }
+  }
+}
+
+.ant-list-item {
+  border-bottom: none !important;
+}

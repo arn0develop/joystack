@@ -1,0 +1,41 @@
+@import "../../config";
+
+$buttonColor: $highlightColor;
+
+.no-outline {
+  outline: none !important;
+}
+
+.joystack-button {
+  border: none;
+  height: 60px;
+  border-radius: 25px;
+  transition: all 0.6s;
+  cursor: pointer;
+  background: $buttonColor center;
+  display: flex;
+  align-items: center;
+}
+
+.joystack-button:hover {
+  background: $buttonColor
+    radial-gradient(circle, transparent 1%, $buttonColor 1%) center/15000%;
+  box-shadow: 0 0 30px 5px rgba(darken($buttonColor, 20), 0.2);
+}
+
+.joystack-button:active {
+  background-size: 100%;
+  transition: all 0s;
+  background-color: lighten($buttonColor, 10);
+}
+
+.joystack-button__text {
+  color: #fff;
+  font: 20px $buttonFont;
+  margin: auto;
+  text-align: center;
+}
+
+.unselectable-text {
+  user-select: none;
+}

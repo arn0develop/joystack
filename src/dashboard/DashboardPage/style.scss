@@ -1,0 +1,47 @@
+@import '../../config';
+
+.dashboard-page-content {
+  display: flex;
+  font-family: $textFont;
+  background-color: #e8ecef;
+  min-height: calc(100vh - 69px - 82px); // viewportHeight - headerHeight - footerHeight
+  .controller {
+    padding: 50px 24px 24px 24px;
+    margin-left: 300px;
+    &.start-page {
+      margin: 0;
+      padding: 0;
+    }
+    .setup-step-container {
+      padding: 0 24px;
+      .step-container {
+        .step-content {
+          .minecraft-server-content,
+          .modpack-server-content {
+            width: auto;
+            display: block;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin-left: 0;
+    }
+
+    @media only screen and (max-width: 425px) {
+      padding: 8px;
+    }
+    flex-grow: 1;
+  }
+  @media only screen and (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.dashboard-card {
+  border-radius: 8px;
+  -webkit-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  -moz-box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+  box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+}

@@ -1,0 +1,40 @@
+@import '../../../../config';
+
+.status-card-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 3%;
+  color: $primaryTextColor;
+  align-items: flex-start;
+  justify-content: center;
+  .badge-content {
+    text-align: center;
+    h4 {
+      font-weight: bold;
+    }
+    .description {
+      display: inline-block;
+      margin-bottom: 75px;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 20px;
+    .badge-content {
+      h4 {
+        font-size: 22px;
+      }
+      .description {
+        font-size: 14px;
+        margin-bottom: 55px;
+      }
+    }
+  }
+}
+
+.status-card-body.dashboard-page{
+  grid-template-columns: none;
+  grid-template-rows: auto auto;
+}

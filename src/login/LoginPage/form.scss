@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+@import './../../config';
+
+.login-card {
+  align-items: center;
+  width: 300px;
+  background-color: #ffffff;
+  padding-top: 5px;
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.login-card__header {
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 30px;
+  max-width: 350px;
+}
+
+.login-card__header > p {
+  font-size: 18px;
+}
+
+.login-card__header > h2 {
+  font-size: 30px;
+}
+
+.login-card__form {}
+
+.login-card__footer {
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.login-card__field {
+  display: block;
+}
+
+.login-card__field > .MuiFormControl-root {
+  margin-top: 5px;
+  font-size: 10px;
+  &::placeholder {
+    font-size: 14px;
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.login-card__field .MuiInput-underline:after {
+  border-bottom-color: $highlightColor;
+}
+
+.login-card__field .MuiFormLabel-root.Mui-focused {
+  color: $highlightColor;
+}
+
+.MuiInputBase-input:hover {
+  border-bottom: none !important;
+}
+
+.login-card__button {
+  display: block;
+  text-align: center;
+  width: 250px;
+  max-width: 250px;
+  margin: 40px auto auto auto;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F05423;
+  transition: background-color .3s;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+    color: white;
+  }
+  &:hover {
+    color: white;
+    background-color: #ff5317;
+  }
+}
+
+.login-card__forgot-password {
+  text-align: right;
+  display: block;
+  float: right;
+  font-size: 13px;
+}
+
+.login-card__link {
+  text-decoration: none;
+  color: #F05423 !important;
+}
+
+.login-card__options {
+  text-align: center;
+  align-items: center;
+}
+
+.login-card__or-spacer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.login-card__or-spacer::before, .login-card__or-spacer::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid gray;
+}
+
+.login-card__or-spacer::before {
+  margin-right: .5rem;
+}
+
+.login-card__or-spacer::after {
+  margin-left: .5rem;
+}
+
+.login-card__social_container {
+  align-items: center;
+  text-align: center;
+}
+
+.login-card-social-button__wrapper {
+  margin-bottom: 20px;
+}

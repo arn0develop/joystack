@@ -1,0 +1,24 @@
+@import "../../../../../config.scss";
+
+.dashboard-goto-card {
+  background-color: $primaryWhite;
+  font-size: 16px;
+  position: relative;
+  .anticon.anticon-tool {
+    @include mainButton(5px, 50%);
+    transition-duration: 0.6s;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .dashboard-goto-card-description {
+    display: flex;
+    align-items: flex-start;
+    img {
+      margin-right: 10px;
+      width: 30px;
+    }
+  }
+}

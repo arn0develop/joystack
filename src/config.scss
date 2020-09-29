@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+@font-face {
+  font-display: swap;
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/Minecraftia.ttf);
+}
+
+$highlightColor: #f7744a;
+
+$primaryWhite: #ffffff;
+$secondaryLightGray: #b8c0c4;
+$primaryTextColor: #002140;
+$textFont: 'Titillium Web', sans-serif;
+$buttonFont: 'Titillium Web', sans-serif;
+
+@function hexToRGBA($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+@mixin mainButton($padding, $radius,$color: $highlightColor) {
+  background-color: $color;
+  color: $primaryWhite;
+  border: 0;
+  outline: 0;
+  padding: $padding;
+  border-radius: $radius;
+
+  &:hover {
+    transition-duration: 0.6s;
+    background-color: $color;
+    box-shadow: 0 0 30px 5px rgba($color,0.5);
+  }
+}
+
+.unselectable-text {
+  user-select: none;
+}

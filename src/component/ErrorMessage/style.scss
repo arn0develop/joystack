@@ -1,0 +1,52 @@
+@import '../../config';
+
+.error-message-content {
+  position: absolute;
+  top: -38px;
+  text-align: center;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+  .error-message {
+    margin: auto;
+    background-color: #F8E6E6;
+    color: $primaryTextColor;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 999;
+    position: relative;
+    border: 1px solid $secondaryLightGray;
+    box-shadow: -1px 1px 9px 0px rgba(185, 192, 197, 0.5);
+    .anticon {
+      margin-right: 7px;
+      font-size: 16px;
+      vertical-align: 0;
+      color: #ec2727;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 8px);
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: $secondaryLightGray;
+    bottom: -11px;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    left: 50%;
+  }
+
+  20%, 60% {
+    left: 51%;
+  }
+
+  40%, 80% {
+    left: 49%;
+  }
+}
